@@ -1,0 +1,14 @@
+{
+    "bare_gcc": false, 
+    "big_project": false, 
+    "board_id": "sketchbook.MiniCore-master.avr.8", 
+    "ide_path": "C:\\Program Files (x86)\\Arduino", 
+    "lib_paths": [], 
+    "sketchbook_path": "D:\\Temp\\Arduino", 
+    "sub_board_ids": [
+        "sketchbook.MiniCore-master.avr.8.bootloader.true", 
+        "sketchbook.MiniCore-master.avr.8.BOD.2v7", 
+        "sketchbook.MiniCore-master.avr.8.LTO.Os", 
+        "sketchbook.MiniCore-master.avr.8.clock.8MHz_internal"
+    ]
+}

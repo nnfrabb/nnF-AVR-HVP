@@ -1,0 +1,282 @@
+{
+    "" : {
+
+    },
+
+    "MCU_Signature" : {
+        "1E9007" : "ATTINY13", "1E9108" : "ATTINY25",
+        "1E9206" : "ATTINY45", "1E930B" : "ATTINY85",
+        "1E910B" : "ATTINY24", "1E9207" : "ATTINY44",
+        "1E930C" : "ATTINY84", "1E9205" : "ATMEGA48A",
+        "1E920A" : "ATMEGA48PA", "1E9307" : "ATMEGA8L",
+        "1E930A" : "ATMEGA88P", "1E930F" : "ATMEGA88PA",
+        "1E9403" : "ATMEGA16", "1E9406" : "ATMEGA168A",
+        "1E940B" : "ATMEGA168PA", "1E9502" : "ATMEGA32",
+        "1E9514" : "ATMEGA328", "1E950F" : "ATMEGA328P",
+        "1E9516" : "ATMEGA328PB"
+    },
+
+    "ATTINY13": {
+        "Memory" : { "FlashSize" : "1024", "FPageSize" : "32", "EEPROMSize" : "64", "EPageSize" : "4"},
+        "Fuses" : {
+            "Default" : {"LFuse" : "0x62", "HFuse" : "0xDF"},
+            "LFuse" : { "CKSEL0" : {"des" : "Select Clock source"},
+                        "CKSEL1" : {"des" : "Select Clock source"},
+                        "SUT0" : {"des" : "Select start-up time"},
+                        "SUT1" : {"des" : "Select start-up time"},
+                        "CKDIV8" : {"des" : "Divide clock by 8"},
+                        "WDTON" : {"des" : "Watchdog Timer always on"},
+                        "EESAVE" : {"des" : "EEPROM memory is preserved through the Chip Erase"},
+                        "SPIEN" : {"des" : "Enable Serial Program and Data Downloading"}
+                    },
+            "HFuse" : { "RSTDISBL" : {"des" : "External Reset disable"},
+                        "BODLEVEL0" : {"des" : "Brown-out Detector trigger level"},
+                        "BODLEVEL1" : {"des" : "Brown-out Detector trigger level"},
+                        "DWEN" : {"des" : "DebugWIRE Enable"},
+                        "SELFPRGEN" : {"des" : "Self Programming Enable"}
+                    },
+            "LockBit" : ["LB1", "LB2"]
+        }
+    },
+
+    "ATTINY25" : {
+        "Memory" : { "FlashSize" : "2048","FPageSize" : "32", "EEPROMSize" : "128", "EPageSize" : "4"},
+        "Fuses" : {
+            "Default" : {"LFuse" : "0x62", "HFuse" : "0xDF", "ExFuse" : "0xFF"},
+            "LFuse" : { "CKSEL0" : {"des" : "Select Clock source"},
+                        "CKSEL1" : {"des" : "Select Clock source"},
+                        "CKSEL2" : {"des" : "Select Clock source"},
+                        "CKSEL3" : {"des" : "Select Clock source"},
+                        "SUT0" : {"des" : "Select start-up time"},
+                        "SUT1" : {"des" : "Select start-up time"},
+                        "CKOUT" : {"des" : "Clock Output Enable"},
+                        "CKDIV8" : {"des" : "Divide clock by 8"}
+                    },
+            "HFuse" : { "BODLEVEL0" : {"des" : "Brown-out Detector trigger level"},
+                        "BODLEVEL1" : {"des" : "Brown-out Detector trigger level"}, 
+                        "BODLEVEL2" : {"des" : "Brown-out Detector trigger level"}, 
+                        "EESAVE" : {"des" : "EEPROM memory is preserved through the Chip Erase"}, 
+                        "WDTON" : {"des" : "Watchdog Timer always on"}, 
+                        "SPIEN" : {"des" : "Enable Serial Program and Data Downloading"}, 
+                        "DWEN" : {"des" : "DebugWIRE Enable"}, 
+                        "RSTDISBL" : {"des" : "External Reset disable"}
+                    },
+            "ExFuse" : {"SELFPRGEN" : {"des" : "Self-Programming Enable"}},
+            "LockBit" : ["LB1", "LB2"]
+        }
+    },
+
+    "ATTINY45" : {
+        "Memory" : { "FlashSize" : "4096", "FPageSize" : "64", "EEPROMSize" : "256", "EPageSize" : "4"},
+        "Fuses" : {
+            "Default" : {"LFuse" : "0x62", "HFuse" : "0xDF", "ExFuse" : "0xFF"},
+            "LFuse" : { "CKSEL0" : {"des" : "Select Clock source"},
+                        "CKSEL1" : {"des" : "Select Clock source"},
+                        "CKSEL2" : {"des" : "Select Clock source"},
+                        "CKSEL3" : {"des" : "Select Clock source"},
+                        "SUT0" : {"des" : "Select start-up time"},
+                        "SUT1" : {"des" : "Select start-up time"},
+                        "CKOUT" : {"des" : "Clock Output Enable"},
+                        "CKDIV8" : {"des" : "Divide clock by 8"}
+                    },
+            "HFuse" : { "BODLEVEL0" : {"des" : "Brown-out Detector trigger level"},
+                        "BODLEVEL1" : {"des" : "Brown-out Detector trigger level"}, 
+                        "BODLEVEL2" : {"des" : "Brown-out Detector trigger level"}, 
+                        "EESAVE" : {"des" : "EEPROM memory is preserved through the Chip Erase"}, 
+                        "WDTON" : {"des" : "Watchdog Timer always on"}, 
+                        "SPIEN" : {"des" : "Enable Serial Program and Data Downloading"}, 
+                        "DWEN" : {"des" : "DebugWIRE Enable"}, 
+                        "RSTDISBL" : {"des" : "External Reset disable"}
+                    },
+            "ExFuse" : {"SELFPRGEN" : {"des" : "Self-Programming Enable"}},
+            "LockBit" : ["LB1", "LB2"]
+        }
+    },
+
+    "ATTINY85" : {
+        "Memory" : { "FlashSize" : "8192", "FPageSize" : "64", "EEPROMSize" : "512", "EPageSize" : "4"},
+        "Fuses" : {
+            "Default" : {"LFuse" : "0x62", "HFuse" : "0xDF", "ExFuse" : "0xFF"},
+            "LFuse" : { "CKSEL0" : {"des" : "Select Clock source"},
+                        "CKSEL1" : {"des" : "Select Clock source"},
+                        "CKSEL2" : {"des" : "Select Clock source"},
+                        "CKSEL3" : {"des" : "Select Clock source"},
+                        "SUT0" : {"des" : "Select start-up time"},
+                        "SUT1" : {"des" : "Select start-up time"},
+                        "CKOUT" : {"des" : "Clock Output Enable"},
+                        "CKDIV8" : {"des" : "Divide clock by 8"}
+                    },
+            "HFuse" : { "BODLEVEL0" : {"des" : "Brown-out Detector trigger level"},
+                        "BODLEVEL1" : {"des" : "Brown-out Detector trigger level"}, 
+                        "BODLEVEL2" : {"des" : "Brown-out Detector trigger level"}, 
+                        "EESAVE" : {"des" : "EEPROM memory is preserved through the Chip Erase"}, 
+                        "WDTON" : {"des" : "Watchdog Timer always on"}, 
+                        "SPIEN" : {"des" : "Enable Serial Program and Data Downloading"}, 
+                        "DWEN" : {"des" : "DebugWIRE Enable"}, 
+                        "RSTDISBL" : {"des" : "External Reset disable"}
+                    },
+            "ExFuse" : {"SELFPRGEN" : {"des" : "Self-Programming Enable"}},
+            "LockBit" : ["LB1", "LB2"]
+        }
+    },
+
+    "ATTINY24" : {
+
+    },
+
+    "ATTINY44" : {
+
+    },
+
+    "ATTINY84" : {
+
+    },
+
+    "ATMEGA48A" : {
+
+    },
+
+    "ATMEGA48PA" : {
+
+    },
+
+    "ATMEGA8L" : {
+        "Memory" : { "FlashSize" : "8192", "FPageSize" : "64", "EEPROMSize" : "512", "EPageSize" : "4"},
+        "Fuses" : {
+            "Default" : {"LFuse" : "0xE1", "HFuse" : "0xD9"},
+            "LFuse" : { "CKSEL0" : {"des" : "Select Clock source"},
+                        "CKSEL1" : {"des" : "Select Clock source"},
+                        "CKSEL2" : {"des" : "Select Clock source"},
+                        "CKSEL3" : {"des" : "Select Clock source"},
+                        "SUT0" : {"des" : "Select start-up time"},
+                        "SUT1" : {"des" : "Select start-up time"},
+                        "BODEN" : {"des" : "Brown out detector enable"},
+                        "BODLEVEL" : {"des" : "Brown out detector trigger level"}
+                    },
+            "HFuse" : { "BOOTRST" : {"des" : "Select Reset Vector"},
+                        "BOOTSZ0" : {"des" : "Select Boot Size"}, 
+                        "BOOTSZ1" : {"des" : "Select Boot Size"}, 
+                        "EESAVE" : {"des" : "EEPROM memory is preserved through the Chip Erase"}, 
+                        "CKOPT" : {"des" : " Oscillator options"}, 
+                        "SPIEN" : {"des" : "Enable Serial Program and Data Downloading"}, 
+                        "WDTON" : {"des" : "WDT always on"}, 
+                        "RSTDISBL" : {"des" : "External Reset disable"}
+                    },
+            "LockBit" : ["LB1", "LB2", "BLB01", "BLB02", "BLB11", "BLB12"]
+        }
+    },
+
+    "ATMEGA88A" : {
+        "Memory" : { "FlashSize" : "8192", "FPageSize" : "64", "EEPROMSize" : "512", "EPageSize" : "4"},
+        "Fuses" : {
+            "Default" : {"LFuse" : "0x62", "HFuse" : "0xDF"},
+            "LFuse" : { "CKSEL0" : {"des" : "Select Clock source"},
+                        "CKSEL1" : {"des" : "Select Clock source"},
+                        "CKSEL2" : {"des" : "Select Clock source"},
+                        "CKSEL3" : {"des" : "Select Clock source"},
+                        "SUT0" : {"des" : "Select start-up time"},
+                        "SUT1" : {"des" : "Select start-up time"},
+                        "BODEN" : {"des" : "Brown out detector enable"},
+                        "BODLEVEL" : {"des" : "Brown out detector trigger level"}
+                    },
+            "HFuse" : { "BOOTRST" : {"des" : "Select Reset Vector"},
+                        "BOOTSZ0" : {"des" : "Select Boot Size"}, 
+                        "BOOTSZ1" : {"des" : "Select Boot Size"}, 
+                        "EESAVE" : {"des" : "EEPROM memory is preserved through the Chip Erase"}, 
+                        "CKOPT" : {"des" : " Oscillator options"}, 
+                        "SPIEN" : {"des" : "Enable Serial Program and Data Downloading"}, 
+                        "WDTON" : {"des" : "WDT always on"}, 
+                        "RSTDISBL" : {"des" : "External Reset disable"}
+                    },
+            "LockBit" : ["LB1", "LB2", "BLB01", "BLB02", "BLB11", "BLB12"]
+        }
+    },
+
+    "ATMEGA88P" : {
+        "Memory" : { "FlashSize" : "8192", "FPageSize" : "64", "EEPROMSize" : "512", "EPageSize" : "4"},
+        "Fuses" : {
+            "Default" : {"LFuse" : "0x62", "HFuse" : "0xDF", "EFuse" : "0xF9"},
+            "LFuse" : { "CKSEL0" : {"des" : "Select Clock source"},
+                        "CKSEL1" : {"des" : "Select Clock source"},
+                        "CKSEL2" : {"des" : "Select Clock source"},
+                        "CKSEL3" : {"des" : "Select Clock source"},
+                        "SUT0" : {"des" : "Select start-up time"},
+                        "SUT1" : {"des" : "Select start-up time"},
+                        "CKOUT" : {"des" : "Clock output"},
+                        "CKDIV8" : {"des" : "Divide clock by 8"}
+                    },
+            "HFuse" : { "BODLEVEL0" : {"des" : "Brown-out Detector trigger level"},
+                        "BODLEVEL1" : {"des" : "Brown-out Detector trigger level"}, 
+                        "BODLEVEL2" : {"des" : "Brown-out Detector trigger level"}, 
+                        "EESAVE" : {"des" : "EEPROM memory is preserved through the Chip Erase"}, 
+                        "WDTON" : {"des" : "WDT always on"}, 
+                        "SPIEN" : {"des" : "Enable Serial Program and Data Downloading"}, 
+                        "DWEN" : {"des" : "debugWIRE Enable"}, 
+                        "RSTDISBL" : {"des" : "External Reset disable"}
+                    },
+            "EFuse" : { "BOOTRST" : {"des" : "Select boot size"},
+                        "BOOTSZ0" : {"des" : "Select boot size"}, 
+                        "BOOTSZ1" : {"des" : "Select reset vector"} 
+                },
+            "LockBit" : ["LB1", "LB2", "BLB01", "BLB02", "BLB11", "BLB12"]
+        }
+    },
+
+    "ATMEGA88PA" : {
+        "Memory" : { "FlashSize" : "8192", "FPageSize" : "64", "EEPROMSize" : "512", "EPageSize" : "4"},
+        "Fuses" : {
+            "Default" : {"LFuse" : "0x62", "HFuse" : "0xDF", "EFuse" : "0xF9"},
+            "LFuse" : { "CKSEL0" : {"des" : "Select Clock source"},
+                        "CKSEL1" : {"des" : "Select Clock source"},
+                        "CKSEL2" : {"des" : "Select Clock source"},
+                        "CKSEL3" : {"des" : "Select Clock source"},
+                        "SUT0" : {"des" : "Select start-up time"},
+                        "SUT1" : {"des" : "Select start-up time"},
+                        "CKOUT" : {"des" : "Clock output"},
+                        "CKDIV8" : {"des" : "Divide clock by 8"}
+                    },
+            "HFuse" : { "BODLEVEL0" : {"des" : "Brown-out Detector trigger level"},
+                        "BODLEVEL1" : {"des" : "Brown-out Detector trigger level"}, 
+                        "BODLEVEL2" : {"des" : "Brown-out Detector trigger level"}, 
+                        "EESAVE" : {"des" : "EEPROM memory is preserved through the Chip Erase"}, 
+                        "WDTON" : {"des" : "WDT always on"}, 
+                        "SPIEN" : {"des" : "Enable Serial Program and Data Downloading"}, 
+                        "DWEN" : {"des" : "debugWIRE Enable"}, 
+                        "RSTDISBL" : {"des" : "External Reset disable"}
+                    },
+            "EFuse" : { "BOOTRST" : {"des" : "Select boot size"},
+                        "BOOTSZ0" : {"des" : "Select boot size"}, 
+                        "BOOTSZ1" : {"des" : "Select reset vector"} 
+                },
+            "LockBit" : ["LB1", "LB2", "BLB01", "BLB02", "BLB11", "BLB12"]
+        }
+    },
+
+    "ATMEGA16" : {
+
+    },
+
+    "ATMEGA168A" : {
+
+    },
+
+    "ATMEGA168PA" : {
+
+    },
+
+    "ATMEGA32" : {
+
+    },
+
+    "ATMEGA328" : {
+
+    },
+
+    "ATMEGA328P" : {
+
+    },
+
+    "ATMEGA328PB" : {
+
+    }
+}
